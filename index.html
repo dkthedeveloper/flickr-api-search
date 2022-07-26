@@ -16,15 +16,23 @@
     <title>Kenzie JavaScript Page</title>
 
     <!-- CSS-->
-    <link href="style.css" rel="stylesheet" media="all" />
+    <link href="./CSS/style.css" rel="stylesheet" media="all" />
   </head>
 
   <body>
-    <h1>Open the Developer Tools to see the console output.</h1>
-    <h3>
-      Either right click and select "Inspect" or use the shortcut Option + ⌘ + J
-      (on macOS), or Shift + CTRL + J (on Windows/Linux).
-    </h3>
-    <script src="code.js"></script>
+    <main>
+      <h1>Flickr <span>API</span> Search</h1>
+      <div id="formContainer">
+        <form name="frm">
+          <label for="search">Search Flickr Images</label>
+          <input type="text" name="search" id="search"></input>
+          <button id="search-btn">Search</button>
+        </form>
+        <button id="refresh">Refresh</button>
+    </div>
+      <section id="photos"></section>
+    </main>
+    <script type="module" src="/JS/code.js"></script>
+    <script type="module" src="/JS/view.js"></script>
   </body>
 </html>
