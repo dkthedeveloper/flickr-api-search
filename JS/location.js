@@ -19,11 +19,11 @@ function onSuccess(position) {
     userLatitude = position.coords.latitude;
     userLongitude = position.coords.longitude;
     return position.coords;
-}
+};
 
 // handle error case
 function onError() {
     console.log(`Failed to get your location!`);
-}
+};
 
 export { userLatitude, userLongitude, getUserLocation }

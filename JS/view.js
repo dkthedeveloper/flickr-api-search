@@ -94,4 +94,4 @@ export function displayPhoto (photoObj) {
         else if (e.key == 'ArrowRight') {
             displayNextPhoto()
         }
-    })
+    });
