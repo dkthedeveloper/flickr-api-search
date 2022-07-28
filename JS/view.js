@@ -52,7 +52,6 @@ function displayPreviousPhoto () {
 };
 
 export function displayPhoto (photoObj) {
-    console.log(photoObj);
     let containerElement = document.createElement('div');
         containerElement.classList.add('containerDiv');
     let photoElement = document.createElement('img');
@@ -82,12 +81,12 @@ export function displayPhoto (photoObj) {
         photoDiv.append(containerElement);
         photoDiv.append(arrowRight);
         arrowRight.addEventListener('click', displayNextPhoto);
-        arrowLeft.addEventListener('click', displayPreviousPhoto);
-        // https://stackoverflow.com/a/41303865
+        arrowLeft.addEventListener('click', displayPreviousPhoto);   
     };
     
 
     document.addEventListener('keydown', function(e) {
+         // https://stackoverflow.com/a/41303865
         if (e.key === 'ArrowLeft') {
             displayPreviousPhoto()
         }
